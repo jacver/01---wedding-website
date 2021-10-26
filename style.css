@@ -1,0 +1,329 @@
+/* Table of Contents 
+
+Global -
+Nav Bar -
+Index/Landing Page - 
+Ceremony Page -
+Logistics Page -
+Album Page - 
+
+
+
+
+
+/* ------------------------------ Global ------------------------------------------ */
+
+body,
+html {
+  height: 100%;
+  background-color: #b2ac88;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #b2ac88;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+}
+
+/* -------------------------- Navigation bar ------------------------ */
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+  text-shadow: black 0 0 3px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #b2ac88;
+}
+
+.nav-links li {
+  /* to remove bullets in list */
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-shadow: black 0 0 1px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    right: 0px;
+    height: 82vh;
+    top: 8vh;
+    background-color: #b2ac88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacty: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* ----- count down */
+/* set to expire 6/4/21 at 1700 est */
+
+.countdown {
+  color: white;
+  text-align: center;
+  text-shadow: black 0px 0px 3px;
+  font-size: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+/* ------------------------ Index Page & Hero Banner ------------------------- */
+
+.banner {
+  background-image: url('Photos/banner.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #b2ac88;
+  width: 100%;
+  height: 85%;
+}
+
+.banner-text {
+  text-align: center;
+  margin: auto;
+  padding-top: 20%;
+  text-shadow: black 0px 0px 3px;
+  color: white;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  /* for mobile  */
+  body {
+    overflow-x: hidden;
+  }
+  .banner {
+    color: white;
+    left: 0px;
+    height: 80vh; /* 92 to make up for 8vh added in nav{} */
+    top: 8vh;
+    background-color: #b2ac88;
+    background-size: cover;
+    background-position: -450px;
+    /* moves background left so people aren't cut off */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .banner-text {
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    text-shadow: black 0px 0px 3px;
+    color: white;
+    font-size: 40px;
+  }
+}
+
+/* ---- Logistics ---- */
+
+.logistics-container {
+  background-image: url('Photos/mural.jpg_large');
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: absolute;
+  height: 92%;
+  width: 100%;
+}
+
+.logistics-item {
+  /* Transparent logistics columns */
+  background-image: linear-gradient(
+    rgba(61, 60, 60, 0.5),
+    rgba(61, 60, 60, 0.5)
+  );
+  flex-shrink: 1;
+  overflow-wrap: break-word;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 30%;
+  height: 75%;
+  border: black solid 3px;
+  color: white;
+}
+
+.logistics-item li {
+  /* to remove bullets in list */
+  list-style: none;
+  /* text settings for non-linked text */
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 0px 0px 1px;
+}
+
+.logistics-item a {
+  /* Links in the logistics columns */
+  color: white;
+  text-shadow: black 0 0 1px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#find-flights {
+  /* Styling for find flight buttons*/
+  display: block;
+  margin-left: 30%;
+  box-shadow: 0 3px 5px black;
+  background-color: white;
+  width: 35%;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  /* for mobile  */
+
+  .logistics-container {
+    background-image: none;
+  }
+
+  .logistics-item {
+    /* width 100% to stack columns */
+    min-width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    text-shadow: black 0px 0px 3px;
+  }
+}
+
+/* -------------Ceremony Page -------------------- */
+
+.ceremony-details {
+  margin-top: 5%;
+  color: white;
+  text-shadow: black 0px 0px 3px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 300%;
+  font-size: larger;
+}
+
+.ceremony-text {
+  margin-left: 45%;
+}
+.img-st-marys {
+  float: left;
+  width: 34%;
+  margin-left: 10%;
+  border: solid black 2px;
+}
+
+@media screen and (max-width: 768px) {
+  /* ceremony page mobile changes */
+  .img-st-marys {
+    float: none;
+    width: 75%;
+    margin-left: 0%;
+  }
+
+  .ceremony-text {
+    margin-left: 0%;
+  }
+}
+
+/* ---- Album page ----*/
