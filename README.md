@@ -6,8 +6,8 @@ My first introduction to code is a comprehensive Javascript course I'm working o
 Goals:
 -- Practice fundamental HTML and CSS
 -- Practice problem solving and researching (stack overflow, google, youtube, etc)
--- Utilize javascript for user interaction, ease, and aesthetics
--- Project planning reinfocement
+-- Utilize javascript for user interaction
+-- Project planning reinforcement
 -- Understand organizational best practices
 -- Gain exposure to GitHub workflow principles
 
