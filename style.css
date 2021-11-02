@@ -6,6 +6,7 @@ Index/Landing Page -
 Ceremony Page -
 Logistics Page -
 Album Page - 
+Registry Page - 
 
 
 /* ------------------------------ Global ------------------------------------------ */
@@ -324,3 +325,45 @@ a:visited {
 }
 
 /* ---- Album page ----*/
+
+/* ---- Registry page ----*/
+
+.registry-container {
+  display: flex;
+  align-items: center;
+}
+
+.registry-item {
+  /* text block on left image on right */
+  flex: 1;
+  color: white;
+  text-shadow: black 0px 0px;
+  font-size: 20px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.registry-item p {
+  padding: 35px;
+  /*provides spacing between all text elements*/
+}
+
+.img-proposal {
+  float: right;
+  width: 50%;
+  margin-right: 20%;
+  border: solid black 2px;
+}
+
+@media screen and (max-width: 768px) {
+  /* registry page mobile changes */
+  .registry-container {
+    flex-direction: column; /* need this to reorient vertically */
+    flex: 1 1 auto;
+  }
+  .img-proposal {
+    width: 80%;
+    height: 90%;
+    margin: 10%;
+  }
+}
