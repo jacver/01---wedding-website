@@ -187,12 +187,10 @@ a:visited {
   }
   .banner {
     color: white;
-    left: 0px;
     height: 80vh; /* 92 to make up for 8vh added in nav{} */
     top: 8vh;
     background-color: #b2ac88;
-    background-size: cover;
-    background-position: right;
+    background-position: 80%;
     /* moves background left so people aren't cut off */
     display: flex;
     flex-direction: column;
