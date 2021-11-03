@@ -47,7 +47,7 @@ a:visited {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 22px;
+  font-size: 200%;
   text-shadow: black 0 0 3px;
 }
 
@@ -71,7 +71,7 @@ a:visited {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 150%;
 }
 
 .burger {
@@ -151,7 +151,7 @@ a:visited {
   color: white;
   text-align: center;
   text-shadow: black 0px 0px 3px;
-  font-size: 30px;
+  font-size: 300%;
   width: 100%;
   margin: auto;
 }
@@ -159,7 +159,7 @@ a:visited {
 /* ------------------------ Index Page & Hero Banner ------------------------- */
 
 .banner {
-  background-image: url('images/banner.jpeg');
+  background-image: url("images/banner.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -175,7 +175,7 @@ a:visited {
   padding-top: 20%;
   text-shadow: black 0px 0px 3px;
   color: white;
-  font-size: 40px;
+  font-size: 200%;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,7 +211,7 @@ a:visited {
 /* ---- Logistics ---- */
 
 .logistics-container {
-  background-image: url('images/mural.jpg_large');
+  background-image: url("images/mural.jpg_large");
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
@@ -239,13 +239,13 @@ a:visited {
   height: 75%;
   border: black solid 3px;
   color: white;
+  font-size: 200%;
 }
 
 .logistics-item li {
   /* to remove bullets in list */
   list-style: none;
   /* text settings for non-linked text */
-  font-size: 20px;
   font-weight: bold;
   color: white;
   text-shadow: black 0px 0px 1px;
@@ -256,7 +256,6 @@ a:visited {
   color: white;
   text-shadow: black 0 0 1px;
   font-weight: bold;
-  font-size: 20px;
   text-align: center;
 }
 
@@ -298,7 +297,7 @@ a:visited {
   font-weight: bold;
   letter-spacing: 3px;
   line-height: 300%;
-  font-size: larger;
+  font-size: 150%;
 }
 
 .ceremony-text {
@@ -338,7 +337,7 @@ a:visited {
   flex: 1;
   color: white;
   text-shadow: black 0px 0px;
-  font-size: 20px;
+  font-size: 200%;
   margin-top: 5%;
   text-align: center;
 }
