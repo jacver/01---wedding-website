@@ -110,6 +110,8 @@ a:visited {
     align-items: center;
     width: 30%;
     transform: translateX(100%);
+    overflow-x: hidden;
+    font-size: 0.7rem;
   }
 
   .burger {
@@ -190,11 +192,13 @@ a:visited {
     top: 8vh;
     background-color: #b2ac88;
     background-size: cover;
-    background-position: -450px;
+    background-position: fixed;
     /* moves background left so people aren't cut off */
     display: flex;
     flex-direction: column;
     align-items: left;
+    position: fixed;
+    min-width: 100%;
   }
 
   .banner-text {
