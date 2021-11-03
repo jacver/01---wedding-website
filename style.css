@@ -32,6 +32,8 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: #b2ac88;
+  position: fixed;
+  width: 100%;
 }
 
 a,
@@ -156,12 +158,13 @@ a:visited {
   font-size: 300%;
   width: 100%;
   margin: auto;
+  position: fixed;
 }
 
 /* ------------------------ Index Page & Hero Banner ------------------------- */
 
 .banner {
-  background-image: url("images/banner.jpeg");
+  background-image: url('images/banner.jpeg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -207,14 +210,18 @@ a:visited {
     left: 0;
     text-shadow: black 0px 0px 3px;
     color: white;
-    font-size: 40px;
+    font-size: 15px;
+  }
+
+  .countdown {
+    font-size: 25px;
   }
 }
 
 /* ---- Logistics ---- */
 
 .logistics-container {
-  background-image: url("images/mural.jpg_large");
+  background-image: url('images/mural.jpg_large');
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
