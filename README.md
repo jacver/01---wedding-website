@@ -1,7 +1,7 @@
 # Wedding-Site
 
 Summary:
-My first introduction to code is a comprehensive Javascript course I'm working on through Udemy. It touches very lightly on HTML and CSS, but seeing the power of the three languages interacting was exciting. This is a personal project to complete alongside my Javascript studies to simultaneously reinforce fundamental HTML and CSS basics.
+This project is my first introduction to code. I wanted to create the website for my wedding from scratch so I dove into HTML and CSS on my own and have been working through a comprehensive Javascript course on Udemy. Exploring how the three languages work together is a personal project to suplement the Javascript course and reinforce fundamental HTML and CSS.
 
 Goals:
 -- Practice fundamental HTML and CSS
