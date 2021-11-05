@@ -15,6 +15,7 @@ body,
 html {
   height: 100%;
   background-color: #b2ac88;
+  text-transform: lowercase;
 }
 
 * {
@@ -105,8 +106,10 @@ a:visited {
     z-index: 9999;
     color: white;
     right: 0px;
-    height: 82vh;
+    height: 50vh;
+    /*height controls white space between links*/
     top: 8vh;
+    /*distance from top navbar - dont change*/
     background-color: #b2ac88;
     border: white solid 1px;
     display: flex;
@@ -116,14 +119,13 @@ a:visited {
     transform: translateX(100%);
     overflow-x: hidden;
     /*keeps non-active navmenu from showing until clicked*/
-    font-size: 0px;
-    line-height: 0;
   }
 
   .nav-links a {
     font-size: 15px;
     margin: 0%;
     display: inline-block;
+    padding-bottom: 0;
   }
 
   .burger {
@@ -312,6 +314,7 @@ a:visited {
     text-align: center;
     position: relative;
     text-shadow: black 0px 0px 6px;
+    font-size: 125%;
   }
 }
 
@@ -335,7 +338,7 @@ a:visited {
   float: left;
   width: 34%;
   margin-left: 10%;
-  border: solid black 2px;
+  border: solid white 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -381,7 +384,7 @@ a:visited {
   float: right;
   width: 50%;
   margin-right: 20%;
-  border: solid black 2px;
+  border: solid white 2px;
 }
 
 @media screen and (max-width: 768px) {
