@@ -205,7 +205,7 @@ a:visited {
     height: 80vh; /* 92 to make up for 8vh added in nav{} */
     top: 8vh;
     background-color: #b2ac88;
-    background-position: 75%;
+    background-position: 70%;
     /* moves background left so people aren't cut off */
     display: flex;
     flex-direction: column;
