@@ -172,26 +172,27 @@ a:visited {
   font-size: 300%;
   width: 100%;
   margin: auto;
+  padding: 7px;
   position: fixed;
 }
 
 /* ------------------------ Index Page & Hero Banner ------------------------- */
 
 .banner {
-  background-image: url('images/banner.jpeg');
+  background-image: url('images/eng3.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #b2ac88;
   width: 100%;
-  height: 85%;
+  height: 90%;
 }
 
 .banner-text {
   text-align: center;
   margin: auto;
-  padding-top: 20%;
+  padding-top: 30%;
   text-shadow: black 0px 0px 3px;
   color: white;
   font-size: 200%;
@@ -204,10 +205,10 @@ a:visited {
   }
   .banner {
     color: white;
-    height: 80vh; /* 92 to make up for 8vh added in nav{} */
+    height: 90vh;
     top: 8vh;
     background-color: #b2ac88;
-    background-position: 70%;
+    background-position: 80%;
     /* moves background left so people aren't cut off */
     display: flex;
     flex-direction: column;
@@ -223,16 +224,17 @@ a:visited {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 40%;
+    top: 45%;
     /* use top to move text up and down over image*/
-    width: 40%;
+    width: 50%;
     /*width of text*/
     color: white;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .countdown {
     font-size: 25px;
+    padding-top: 10px;
   }
 }
 
