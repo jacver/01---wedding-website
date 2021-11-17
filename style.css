@@ -356,7 +356,8 @@ a:visited {
   }
 
   .ceremony-text {
-    margin-left: 0%;
+    margin: auto;
+    width: 95%;
   }
 }
 
@@ -480,10 +481,35 @@ a:visited {
   border: white solid 3px;
 }
 
+@media screen and (max-width: 768px) {
+  /* media query for album page*/
+
+  .slideshow-container {
+    max-width: 310px;
+  }
+
+  .containers img {
+    margin-top: 16vh;
+    max-width: 300px;
+    max-height: 500px;
+    border: white solid 2px;
+  }
+
+  .back,
+  .forward {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+}
+
 /* ---- Registry page ----*/
 
 .registry-container {
   margin-top: 8vh;
+  margin-left: 40px;
   display: flex;
   align-items: center;
 }
@@ -515,6 +541,8 @@ a:visited {
   .registry-container {
     flex-direction: column; /* need this to reorient vertically */
     flex: 1 1 auto;
+    margin-top: 8vh;
+    margin-left: 0;
   }
   .img-proposal {
     width: 80%;
