@@ -335,6 +335,9 @@ a:visited {
 
 .ceremony-text {
   margin-left: 45%;
+  line-height: 120%;
+  width: 50%;
+  text-align: center;
 }
 .img-st-marys {
   float: left;
