@@ -518,7 +518,7 @@ a:visited {
   /* text block on left image on right */
   flex: 1;
   color: white;
-  text-shadow: black 0px 0px;
+  text-shadow: black 0 0 3px;
   font-size: 200%;
   margin-top: 5%;
   text-align: center;
