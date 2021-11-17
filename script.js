@@ -58,7 +58,7 @@ let x = setInterval(function () {
 // ----- Album ---
 
 var slidePosition = 1;
-SlideShow(slidePosition);
+slideShow(slidePosition);
 
 // forward/Back controls
 function plusSlides(n) {
