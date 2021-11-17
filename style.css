@@ -507,12 +507,12 @@ a:visited {
   /* media query for album page*/
 
   .slideshow-container {
-    max-width: 310px;
+    max-width: 300px;
   }
 
   .containers img {
     margin-top: 16vh;
-    max-width: 250px;
+    max-width: 200px;
     max-height: 500px;
     border: white solid 2px;
   }
