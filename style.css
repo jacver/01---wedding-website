@@ -463,40 +463,9 @@ a:visited {
   }
 }
 
-<<<<<<< HEAD
-  .registry-item {
-    /* text block on left image on right */
-    flex: 1;
-    color: white;
-    text-shadow: black 0 0 3px;
-    font-size: 200%;
-    margin-top: 5%;
-    text-align: center;
-  }
-  @media screen and (min-width: 1500px) {
-    /*media query for wide screen*/
-    .slideshow-container {
-      max-width: 1200px;
-      max-height: 1000px;
-    }
-
-    .containers img {
-      max-width: 1199px;
-      max-height: 900px;
-    }
-
-    .back,
-    .forward {
-      font-size: 60px;
-      margin-right: 15px;
-      margin-left: 15px;
-      border-radius: 5px;
-    }
-=======
 @keyframes fade {
   from {
     opacity: 0.5;
->>>>>>> parent of 1fc5ffc (widescreen compatibility)
   }
   to {
     opacity: 2;
