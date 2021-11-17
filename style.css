@@ -383,8 +383,8 @@ a:visited {
   top: 48%;
   width: auto;
   margin-top: -23px;
-  padding: 17px;
-  color: grey;
+  padding: 30px;
+  color: white;
   font-weight: bold;
   font-size: 19px;
   transition: 0.4s ease;
@@ -399,7 +399,8 @@ a:visited {
 
 .back:hover,
 .forward:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  color: black;
 }
 
 /* caption info - if we decide to add captions must also uncomment HTML
@@ -430,7 +431,7 @@ a:visited {
   height: 16px;
   width: 16px;
   margin: 0 3px;
-  background-color: #acc;
+  background-color: white;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
@@ -468,10 +469,12 @@ a:visited {
 }
 
 .containers img {
-  max-width: 800px;
-  max-height: 700px;
+  margin-top: 8vh;
+  max-width: 700px;
+  max-height: 525px;
   align-content: center;
   justify-content: center;
+  border: white solid 3px;
 }
 
 /* ---- Registry page ----*/
