@@ -320,94 +320,116 @@ a:visited {
   }
 }
 
-/* -------------Ceremony Page -------------------- */
+@media screen and (min-width: 1500px) {
+  /*media query for wide screen*/
 
-.ceremony-details {
-  margin-top: 5%;
-  color: white;
-  text-shadow: black 0px 0px 3px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 3px;
-  line-height: 300%;
-  font-size: 150%;
-}
+  .logistics-item {
+    flex: 1;
+    gap: 50px;
+    line-height: 40px;
+    /*line-height to space links and headers*/
+    text-align: center;
+    text-shadow: black 0px 0px 6px;
+    font-size: 40px;
+  }
 
-.ceremony-text {
-  margin-left: 45%;
-  line-height: 120%;
-  width: 50%;
-  text-align: center;
-}
-.img-st-marys {
-  float: left;
-  width: 34%;
-  margin-left: 10%;
-  border: solid white 2px;
-}
+  /* -------------Ceremony Page -------------------- */
 
-@media screen and (max-width: 768px) {
-  /* ceremony page mobile changes */
-  .img-st-marys {
-    margin-top: 8vh;
-    float: none;
-    width: 75%;
-    margin-left: 0%;
+  .ceremony-details {
+    margin-top: 5%;
+    color: white;
+    text-shadow: black 0px 0px 3px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 300%;
+    font-size: 150%;
   }
 
   .ceremony-text {
-    margin: auto;
-    width: 95%;
+    margin-left: 45%;
+    line-height: 120%;
+    width: 50%;
+    text-align: center;
   }
-}
+  .img-st-marys {
+    float: left;
+    width: 34%;
+    margin-left: 10%;
+    border: solid white 2px;
+  }
 
-/* ---- Album page ----*/
+  @media screen and (max-width: 768px) {
+    /* ceremony page mobile changes */
+    .img-st-marys {
+      margin-top: 8vh;
+      float: none;
+      width: 75%;
+      margin-left: 0%;
+    }
 
-/*slideshow container*/
-.slideshow-container {
-  width: 60%;
-  margin: auto;
-  max-height: 575px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
+    .ceremony-text {
+      margin: auto;
+      width: 95%;
+    }
+  }
 
-/*images invisible by default*/
-.containers {
-  display: none;
-  text-align: center;
-}
+  /* ------- Album page -------*/
 
-/*back and forward buttons*/
+  /*slideshow container*/
+  .slideshow-container {
+    width: 99%;
+    margin: auto;
+    max-height: 575px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 
-.back,
-.forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 30px;
-  color: white;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-}
+  .containers img {
+    margin-top: 8vh;
+    max-width: 700px;
+    max-height: 525px;
+    align-content: center;
+    justify-content: center;
+    border: white solid 3px;
+  }
 
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
+  /*images invisible by default*/
+  .containers {
+    display: none;
+    text-align: center;
+  }
 
-.back:hover,
-.forward:hover {
-  background-color: white;
-  color: black;
-}
+  /*back and forward buttons*/
 
-/* caption info - if we decide to add captions must also uncomment HTML
+  .back,
+  .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .back:hover,
+  .forward:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* caption info - if we decide to add captions must also uncomment HTML
 .info {
   color: #e3e3e3;
   font-size: 16px;
@@ -420,133 +442,155 @@ a:visited {
 } 
 */
 
-/* Worknumbering (1/3 etc) */
-.message-info {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
-}
-
-/* The circles or bullets and indicators */
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-.enable,
-.dots:hover {
-  background-color: #717161;
-}
-
-/* Faint animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 2;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 2;
-  }
-}
-
-.containers img {
-  margin-top: 8vh;
-  max-width: 700px;
-  max-height: 525px;
-  align-content: center;
-  justify-content: center;
-  border: white solid 3px;
-}
-
-@media screen and (max-width: 768px) {
-  /* media query for album page*/
-
-  .slideshow-container {
-    max-width: 310px;
+  /* Worknumbering (1/3 etc) */
+  .message-info {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
   }
 
-  .containers img {
-    margin-top: 16vh;
-    max-width: 300px;
-    max-height: 500px;
-    border: white solid 2px;
+  /* The circles or bullets and indicators */
+  .dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
   }
 
-  .back,
-  .forward {
-    font-size: 20px;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
+  .enable,
+  .dots:hover {
+    background-color: #717161;
   }
-}
 
-/* ---- Registry page ----*/
+  /* Faint animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
 
-.registry-container {
-  margin-top: 8vh;
-  margin-left: 40px;
-  display: flex;
-  align-items: center;
-}
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 2;
+    }
+  }
 
-.registry-item {
-  /* text block on left image on right */
-  flex: 1;
-  color: white;
-  text-shadow: black 0 0 3px;
-  font-size: 200%;
-  margin-top: 5%;
-  text-align: center;
-}
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 2;
+    }
+  }
 
-.registry-item p {
-  padding: 35px;
-  /*provides spacing between all text elements*/
-}
+  .registry-item {
+    /* text block on left image on right */
+    flex: 1;
+    color: white;
+    text-shadow: black 0 0 3px;
+    font-size: 200%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  @media screen and (min-width: 1500px) {
+    /*media query for wide screen*/
+    .slideshow-container {
+      max-width: 1200px;
+      max-height: 1000px;
+    }
 
-.img-proposal {
-  float: right;
-  width: 50%;
-  margin-right: 20%;
-  border: solid white 2px;
-}
+    .containers img {
+      max-width: 1199px;
+      max-height: 900px;
+    }
 
-@media screen and (max-width: 768px) {
-  /* registry page mobile changes */
+    .back,
+    .forward {
+      font-size: 60px;
+      margin-right: 15px;
+      margin-left: 15px;
+      border-radius: 5px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* media query for mobile album page*/
+
+    .slideshow-container {
+      max-width: 310px;
+    }
+
+    .containers img {
+      margin-top: 16vh;
+      max-width: 300px;
+      max-height: 500px;
+      border: white solid 2px;
+    }
+
+    .back,
+    .forward {
+      font-size: 20px;
+      padding: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  /* ---- Registry page ----*/
+
   .registry-container {
-    flex-direction: column; /* need this to reorient vertically */
-    flex: 1 1 auto;
     margin-top: 8vh;
-    margin-left: 0;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
   }
+
+  .registry-item {
+    /* text block on left image on right */
+    flex: 1;
+    color: white;
+    text-shadow: black 0px 0px;
+    font-size: 200%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .registry-item p {
+    padding: 35px;
+    /*provides spacing between all text elements*/
+  }
+
   .img-proposal {
-    width: 80%;
-    height: 90%;
-    margin: 10%;
+    float: right;
+    width: 50%;
+    margin-right: 20%;
+    border: solid white 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* registry page mobile changes */
+    .registry-container {
+      flex-direction: column; /* need this to reorient vertically */
+      flex: 1 1 auto;
+      margin-top: 8vh;
+      margin-left: 0;
+    }
+    .img-proposal {
+      width: 80%;
+      height: 90%;
+      margin: 10%;
+    }
   }
 }
