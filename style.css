@@ -11,6 +11,11 @@ Registry Page -
 
 /* ------------------------------ Global ------------------------------------------ */
 
+@font-face {
+  font-family: andes;
+  src: url(fonts/Andes.ttf);
+}
+
 body,
 html {
   height: 100%;
@@ -189,10 +194,12 @@ a:visited {
   height: 90%;
 }
 
-.banner-text {
-  font-size: 200%;
+.banner-text h1 {
+  font-family: andes, sans-serif;
+  letter-spacing: 8px;
+  line-height: 75px;
+  font-size: 65px;
   text-align: center;
-  text-shadow: black 0px 0px 3px;
   margin: auto;
   padding-top: 30%;
   color: white;
