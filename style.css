@@ -47,6 +47,7 @@ a:hover,
 a:active,
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 /* -------------------------- Navigation bar ------------------------ */
@@ -55,8 +56,7 @@ a:visited {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 200%;
-  text-shadow: black 0 0 3px;
+  font-size: 1.75rem;
 }
 
 .nav-links {
@@ -66,7 +66,7 @@ a:visited {
   text-decoration: none;
   font-weight: bold;
   background-color: #b2ac88;
-  border: black 0px 0px 3px;
+  text-transform: uppercase;
 }
 
 .nav-links li {
@@ -76,11 +76,10 @@ a:visited {
 
 .nav-links a {
   color: white;
-  text-shadow: black 0 0 1px;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 1.2rem;
 }
 
 .burger {
@@ -172,9 +171,11 @@ a:visited {
 
 .countdown {
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
   text-align: center;
-  text-shadow: black 0px 0px 3px;
-  font-size: 25px;
+  font-size: 1.3rem;
   width: 100%;
   margin: auto;
   padding: 7px;
@@ -201,7 +202,7 @@ a:visited {
   font-size: 65px;
   text-align: center;
   margin: auto;
-  padding-top: 30%;
+  padding-top: 35%;
   color: white;
 }
 

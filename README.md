@@ -8,8 +8,10 @@ Goals:
 -- Practice problem solving and researching (stack overflow, google, youtube, etc)
 -- Utilize javascript for user interaction
 -- Project planning reinforcement
--- Understand organizational best practices
+-- After acheiving functionality, improve overall UI/UX through collaboration with a designer
 -- Gain exposure to GitHub workflow principles
 
 Development Roadmap:
-Since this is my first solo project not supported by an established course, my focus is on functionality. Once I have achieved that, I will dive into refactoring the code to maximize efficiency.
+-- Acheive functionality
+-- Review with with designer/other coders to refine UI/UX and clean code
+-- Go public NLT 1/15/22
