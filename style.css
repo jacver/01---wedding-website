@@ -62,6 +62,7 @@ a:visited {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  font-size: 1.3rem;
   width: 40%;
   text-decoration: none;
   font-weight: bold;
@@ -79,7 +80,7 @@ a:visited {
   text-decoration: none;
   letter-spacing: 1.5px;
   font-weight: bold;
-  font-size: 1.2rem;
+  text-size-adjust: none;
 }
 
 .burger {
@@ -167,19 +168,20 @@ a:visited {
 }
 
 /* ----- count down */
-/* set to expire 6/4/21 at 1700 est */
+/* set to expire 6/4/22 at 1700 est */
 
 .countdown {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: 100%;
   margin: auto;
   padding: 7px;
   position: fixed;
+  text-size-adjust: none;
 }
 
 /* ------------------------ Index Page & Hero Banner ------------------------- */
