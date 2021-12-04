@@ -349,9 +349,9 @@ a:visited {
 
 .ceremony-text {
   font-weight: 900;
-  margin-left: 45%;
+  margin-left: 50%;
   line-height: 120%;
-  width: 50%;
+  width: 45%;
   text-align: center;
   text-transform: initial;
   /* initial text transform ignores the global capitalization rules */
