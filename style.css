@@ -40,6 +40,7 @@ nav {
   background-color: #b2ac88;
   position: fixed;
   width: 100%;
+  border-bottom: white 1px solid;
 }
 
 a,
@@ -338,7 +339,6 @@ a:visited {
 .ceremony-details {
   margin-top: 5%;
   color: white;
-  text-shadow: black 0px 0px 3px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 3px;
@@ -545,7 +545,7 @@ a:visited {
 
 .registry-container {
   margin-top: 8vh;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   display: flex;
   align-items: center;
 }
@@ -557,6 +557,7 @@ a:visited {
   text-shadow: black 0px 0px;
   font-size: 200%;
   margin-top: 5%;
+  margin-left: 40px;
   text-align: center;
 }
 
