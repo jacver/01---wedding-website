@@ -523,8 +523,8 @@ a:visited {
   }
 
   .containers img {
-    margin-top: 16vh;
-    max-width: 350px;
+    margin-top: 10vh;
+    max-width: 300px;
     max-height: 600px;
     overflow-x: visible;
   }
