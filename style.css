@@ -248,11 +248,6 @@ a:visited {
 /* ---- Logistics ---- */
 
 .logistics-container {
-  background-image: url("images/mural.jpg_large");
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -263,8 +258,6 @@ a:visited {
 }
 
 .logistics-item {
-  /* Transparent logistics columns */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   flex-shrink: 1;
   overflow-wrap: break-word;
   margin-top: 50px;
@@ -272,18 +265,23 @@ a:visited {
   padding: 5px;
   width: 30%;
   height: 75%;
-  border: black solid 3px;
   color: rgb(252, 252, 252);
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.logistics-item h2 {
+  font-family: Andes, sans-serif;
+  letter-spacing: 3px;
 }
 
 .logistics-item li {
   /* to remove bullets in list */
   list-style: none;
   /* text settings for non-linked text */
-  font-weight: bold;
+  font-weight: 100;
+  text-transform: initial;
   color: rgb(252, 252, 252);
-  /* text-shadow: black 0px 0px 5px; */
 }
 
 .logistics-item a {
@@ -292,6 +290,8 @@ a:visited {
   /* text-shadow: black 0 0 5px; */
   font-weight: bold;
   text-align: center;
+  text-decoration: underline;
+  font-weight: 100;
 }
 
 #find-flights {
@@ -309,10 +309,6 @@ a:visited {
 
   .logistics-container {
     background-image: none;
-  }
-
-  .logistics-item h2 {
-    border: white 1px solid;
   }
 
   .logistics-item a {
