@@ -582,7 +582,7 @@ a:visited {
   text-transform: uppercase;
   font-size: 1.75rem;
   position: absolute;
-  top: 55vh;
+  top: 60vh;
   width: 40%;
   left: 8%;
 }
@@ -604,7 +604,25 @@ a:visited {
   }
   .img-proposal {
     width: 80%;
-    height: 90%;
-    margin: 10%;
+    position: absolute;
+    height: 75%;
+    left: 11%;
+    top: 50vh;
+  }
+
+  .registry-item h1 {
+    position: absolute;
+    top: 12vh;
+    left: 35%;
+  }
+
+  .registry-item p {
+    width: 90%;
+    top: 17vh;
+  }
+
+  .registry-link {
+    width: 90%;
+    top: 45vh;
   }
 }
