@@ -558,23 +558,33 @@ a:visited {
   /* text block on left image on right */
   flex: 1;
   color: white;
-  text-shadow: black 0px 0px;
   font-size: 200%;
   margin-top: 5%;
-  margin-left: 40px;
+  margin-left: 5%;
   text-align: center;
+  font-weight: 900;
+  text-align: center;
+  text-transform: initial;
 }
 
 .registry-item p {
   padding: 35px;
   /*provides spacing between all text elements*/
+  font-weight: 100;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.registry-link {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 .img-proposal {
   float: right;
-  width: 50%;
+  width: 80%;
   margin-right: 20%;
-  border: solid white 2px;
 }
 
 @media screen and (max-width: 768px) {
