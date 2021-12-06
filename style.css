@@ -603,9 +603,9 @@ a:visited {
     margin-left: 0;
   }
   .img-proposal {
-    width: 80%;
+    width: 85%;
     position: absolute;
-    height: 80%;
+    height: 75%;
     left: 11%;
     top: 70vh;
   }
