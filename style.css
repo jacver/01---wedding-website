@@ -523,7 +523,7 @@ a:visited {
   }
 
   .containers img {
-    margin-top: 30vh;
+    margin-top: 20vh;
     max-width: 260px;
     max-height: 600px;
     overflow-x: visible;
@@ -613,7 +613,7 @@ a:visited {
   .registry-item h1 {
     position: absolute;
     top: 12vh;
-    left: 20%;
+    left: 25%;
   }
 
   .registry-item p {
