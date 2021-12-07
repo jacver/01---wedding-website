@@ -606,23 +606,25 @@ a:visited {
     width: 85%;
     position: absolute;
     height: 75%;
-    left: 11%;
+    left: 8%;
     top: 70vh;
   }
 
   .registry-item h1 {
     position: absolute;
     top: 12vh;
-    left: 30%;
+    left: 20%;
   }
 
   .registry-item p {
     width: 90%;
     top: 17vh;
+    left: 5%;
   }
 
   .registry-link {
     width: 90%;
     top: 67vh;
+    left: 6%;
   }
 }
