@@ -2,11 +2,11 @@
 
 Global -
 Nav Bar -
-Index/Landing Page - 
-Ceremony Page -
-Logistics Page -
-Album Page - 
-Registry Page - 
+Index/Landing  - 
+Ceremony  -
+Logistics  -
+Album  - 
+Registry  - 
 
 
 /* ------------------------------ Global ------------------------------------------ */
@@ -40,6 +40,7 @@ nav {
   background-color: #b2ac88;
   position: fixed;
   width: 100%;
+  border-bottom: white 1px solid;
 }
 
 a,
@@ -47,6 +48,7 @@ a:hover,
 a:active,
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 /* -------------------------- Navigation bar ------------------------ */
@@ -55,18 +57,18 @@ a:visited {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 200%;
-  text-shadow: black 0 0 3px;
+  font-size: 1.75rem;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
+  font-size: 1.3rem;
   width: 40%;
   text-decoration: none;
   font-weight: bold;
   background-color: #b2ac88;
-  border: black 0px 0px 3px;
+  text-transform: uppercase;
 }
 
 .nav-links li {
@@ -76,11 +78,10 @@ a:visited {
 
 .nav-links a {
   color: white;
-  text-shadow: black 0 0 1px;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   font-weight: bold;
-  font-size: 100%;
+  text-size-adjust: none;
 }
 
 .burger {
@@ -102,7 +103,7 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -168,13 +169,15 @@ a:visited {
 }
 
 /* ----- count down */
-/* set to expire 6/4/21 at 1700 est */
+/* set to expire 6/4/22 at 1700 est */
 
 .countdown {
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.25px;
   text-align: center;
-  text-shadow: black 0px 0px 3px;
-  font-size: 25px;
+  font-size: 1.2rem;
   width: 100%;
   margin: auto;
   padding: 7px;
@@ -184,7 +187,7 @@ a:visited {
 /* ------------------------ Index Page & Hero Banner ------------------------- */
 
 .banner {
-  background-image: url('images/eng3.jpg');
+  background-image: url("images/eng3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -197,11 +200,11 @@ a:visited {
 .banner-text h1 {
   font-family: andes, sans-serif;
   letter-spacing: 8px;
-  line-height: 75px;
-  font-size: 65px;
+  line-height: 4.69rem;
+  font-size: 4rem;
   text-align: center;
   margin: auto;
-  padding-top: 30%;
+  padding-top: 35%;
   color: white;
 }
 
@@ -237,19 +240,58 @@ a:visited {
 
   .countdown {
     font-size: 20px;
-    top: 87%;
+    top: 90%;
     position: absolute;
   }
 }
 
-/* ---- Logistics ---- */
+/* -------------Ceremony Page -------------------------------------------------------------- */
+
+.ceremony-details {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 300%;
+  font-size: 1.5rem;
+  /* ceremony header font stylized in-line HTML */
+}
+
+.ceremony-text {
+  font-weight: 900;
+  margin-left: 50%;
+  line-height: 120%;
+  width: 45%;
+  text-align: center;
+  text-transform: initial;
+  /* initial text transform ignores the global capitalization rules */
+}
+.img-ceremony {
+  margin-top: 1.8%;
+  float: left;
+  width: 34%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  /* ceremony page mobile changes */
+  .img-ceremony {
+    margin-top: 8vh;
+    float: none;
+    width: 75%;
+    margin-left: 0%;
+  }
+
+  .ceremony-text {
+    margin: auto;
+    width: 95%;
+  }
+}
+
+/* -------------------------- Logistics -------------------------------------- */
 
 .logistics-container {
-  background-image: url('images/mural.jpg_large');
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -260,8 +302,6 @@ a:visited {
 }
 
 .logistics-item {
-  /* Transparent logistics columns */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   flex-shrink: 1;
   overflow-wrap: break-word;
   margin-top: 50px;
@@ -269,18 +309,23 @@ a:visited {
   padding: 5px;
   width: 30%;
   height: 75%;
-  border: black solid 3px;
   color: rgb(252, 252, 252);
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.logistics-item h2 {
+  font-family: Andes, sans-serif;
+  letter-spacing: 3px;
 }
 
 .logistics-item li {
   /* to remove bullets in list */
   list-style: none;
   /* text settings for non-linked text */
-  font-weight: bold;
+  font-weight: 100;
+  text-transform: initial;
   color: rgb(252, 252, 252);
-  /* text-shadow: black 0px 0px 5px; */
 }
 
 .logistics-item a {
@@ -289,6 +334,8 @@ a:visited {
   /* text-shadow: black 0 0 5px; */
   font-weight: bold;
   text-align: center;
+  text-decoration: underline;
+  font-weight: 100;
 }
 
 #find-flights {
@@ -306,10 +353,6 @@ a:visited {
 
   .logistics-container {
     background-image: none;
-  }
-
-  .logistics-item h2 {
-    border: white 1px solid;
   }
 
   .logistics-item a {
@@ -331,54 +374,14 @@ a:visited {
   }
 }
 
-/* -------------Ceremony Page -------------------- */
-
-.ceremony-details {
-  margin-top: 5%;
-  color: white;
-  text-shadow: black 0px 0px 3px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 3px;
-  line-height: 300%;
-  font-size: 150%;
-}
-
-.ceremony-text {
-  margin-left: 45%;
-  line-height: 120%;
-  width: 50%;
-  text-align: center;
-}
-.img-st-marys {
-  float: left;
-  width: 34%;
-  margin-left: 10%;
-  border: solid white 2px;
-}
-
-@media screen and (max-width: 768px) {
-  /* ceremony page mobile changes */
-  .img-st-marys {
-    margin-top: 8vh;
-    float: none;
-    width: 75%;
-    margin-left: 0%;
-  }
-
-  .ceremony-text {
-    margin: auto;
-    width: 95%;
-  }
-}
-
-/* ---- Album page ----*/
+/* -------------------------------------- Album page ---------------------------*/
 
 /*slideshow container*/
 .slideshow-container {
   width: 60%;
   margin: auto;
-  max-height: 575px;
+  margin-top: 2%;
+  max-height: 1100px;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -443,8 +446,8 @@ a:visited {
 /* The circles or bullets and indicators */
 .dots {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 10px;
   margin: 0 3px;
   background-color: white;
   border-radius: 50%;
@@ -486,10 +489,9 @@ a:visited {
 .containers img {
   margin-top: 8vh;
   max-width: 700px;
-  max-height: 525px;
+  max-height: 700px;
   align-content: center;
   justify-content: center;
-  border: white solid 3px;
 }
 
 @media screen and (min-width: 1800px) {
@@ -501,8 +503,7 @@ a:visited {
   .containers img {
     margin-top: 12vh;
     max-width: 1100px;
-    max-height: 800px;
-    border: white solid 2px;
+    max-height: 1000px;
   }
 
   .back,
@@ -518,14 +519,13 @@ a:visited {
   /* media query for album page*/
 
   .slideshow-container {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .containers img {
-    margin-top: 16vh;
-    max-width: 225px;
+    margin-top: 20vh;
+    max-width: 260px;
     max-height: 600px;
-    border: white solid 1px;
     overflow-x: visible;
   }
 
@@ -539,11 +539,10 @@ a:visited {
   }
 }
 
-/* ---- Registry page ----*/
+/* ---------------------------------------- Registry page ---------------------------*/
 
 .registry-container {
-  margin-top: 8vh;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   display: flex;
   align-items: center;
 }
@@ -552,22 +551,47 @@ a:visited {
   /* text block on left image on right */
   flex: 1;
   color: white;
-  text-shadow: black 0px 0px;
-  font-size: 200%;
-  margin-top: 5%;
+  font-size: 1.75rem;
+  margin-top: 8vh;
+  margin-left: 5%;
   text-align: center;
+  font-weight: 900;
+  text-transform: initial;
+}
+
+.registry-item h1 {
+  position: absolute;
+  top: 20vh;
+  left: 24%;
 }
 
 .registry-item p {
   padding: 35px;
   /*provides spacing between all text elements*/
+  font-weight: 100;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  position: absolute;
+  width: 40%;
+  top: 35vh;
+  left: 8%;
+}
+
+.registry-link {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  position: absolute;
+  top: 60vh;
+  width: 40%;
+  left: 8%;
 }
 
 .img-proposal {
   float: right;
-  width: 50%;
+  width: 80%;
   margin-right: 20%;
-  border: solid white 2px;
+  margin-top: 8vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -579,8 +603,28 @@ a:visited {
     margin-left: 0;
   }
   .img-proposal {
-    width: 80%;
-    height: 90%;
-    margin: 10%;
+    width: 85%;
+    position: absolute;
+    height: 75%;
+    left: 8%;
+    top: 70vh;
+  }
+
+  .registry-item h1 {
+    position: absolute;
+    top: 12vh;
+    left: 25%;
+  }
+
+  .registry-item p {
+    width: 90%;
+    top: 17vh;
+    left: 5%;
+  }
+
+  .registry-link {
+    width: 90%;
+    top: 67vh;
+    left: 6%;
   }
 }

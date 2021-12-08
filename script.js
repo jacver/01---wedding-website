@@ -1,20 +1,20 @@
-'use strict';
+"use strict";
 
 // -------------------Animating burger nav----------------------
 const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-  burger.addEventListener('click', () => {
+  burger.addEventListener("click", () => {
     // Toggle Nav
-    nav.classList.toggle('nav-active');
+    nav.classList.toggle("nav-active");
 
     // Animate Links
     navLinks.forEach((link, index) => {
       // if-else will reset link fade when menu closes and reopens
       if (link.style.animation) {
-        link.style.animation = '';
+        link.style.animation = "";
       } else {
         link.style.animation = `navLinkFade 0.5s ease forwards ${
           index / 5 + 0.45
@@ -23,7 +23,7 @@ const navSlide = () => {
       }
     });
     // burger animation
-    burger.classList.toggle('toggle');
+    burger.classList.toggle("toggle");
   });
 };
 
@@ -32,7 +32,7 @@ navSlide(); // invoking the function
 //  --------------------live countdown --------------
 
 // setting countdown date
-let countDownDate = new Date('June 4, 2022 17:00:00').getTime();
+let countDownDate = new Date("June 4, 2022 17:00:00").getTime();
 
 // counting down every second
 let x = setInterval(function () {
@@ -47,12 +47,12 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // display results w/ query selector or getElementByID
   document.querySelector(
-    '.countdown'
+    ".countdown"
   ).textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   // end text
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector('.countdown').textContent = 'Party time!';
+    document.querySelector(".countdown").textContent = "See you soon!";
   }
 }, 1000);
 
@@ -73,8 +73,8 @@ function currentSlide(n) {
 
 function slideShow(n) {
   var i;
-  var slides = document.getElementsByClassName('containers');
-  var circles = document.getElementsByClassName('dots');
+  var slides = document.getElementsByClassName("containers");
+  var circles = document.getElementsByClassName("dots");
   if (n > slides.length) {
     slidePosition = 1;
   }
@@ -82,11 +82,11 @@ function slideShow(n) {
     slidePosition = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].style.display = "none";
   }
   for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(' enable', '');
+    circles[i].className = circles[i].className.replace(" enable", "");
   }
-  slides[slidePosition - 1].style.display = 'block';
-  circles[slidePosition - 1].className += ' enable';
+  slides[slidePosition - 1].style.display = "block";
+  circles[slidePosition - 1].className += " enable";
 }
