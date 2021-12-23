@@ -621,20 +621,23 @@ a:visited {
   .registry-item h1 {
     position: absolute;
     transform: translateX(-50%);
-    top: 12vh;
     left: 50%;
+    top: 12vh;
     margin: auto;
+    width: 100%;
   }
 
   .registry-item p {
-    width: 85%;
-    top: 17vh;
+    width: 100%;
+    top: 21vh;
     text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
   }
 
   .registry-link {
-    width: 90%;
-    top: 67vh;
+    width: 100%;
+    top: 70vh;
     text-align: center;
     transform: translateX(-50%);
     left: 50%;
@@ -644,7 +647,7 @@ a:visited {
     width: 65%;
     position: absolute;
     height: 75%;
-    top: 70vh;
+    top: 75vh;
     transform: translateX(-50%);
     left: 50%;
   }
