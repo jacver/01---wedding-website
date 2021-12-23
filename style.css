@@ -573,8 +573,10 @@ a:visited {
 
 .registry-item h1 {
   position: absolute;
-  top: 20vh;
-  left: 22%;
+  top: 10vh;
+  font-size: 4rem;
+  width: 45%;
+  padding: 35px;
 }
 
 .registry-item p {
@@ -584,9 +586,8 @@ a:visited {
   font-size: 1.5rem;
   letter-spacing: 3px;
   position: absolute;
-  width: 40%;
-  top: 28vh;
-  left: 8%;
+  width: 45%;
+  top: 30vh;
 }
 
 .registry-link {
