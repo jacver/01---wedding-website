@@ -646,7 +646,7 @@ a:visited {
   .img-proposal {
     width: 65%;
     position: absolute;
-    height: 75%;
+    height: 65%;
     top: 75vh;
     transform: translateX(-50%);
     left: 50%;
