@@ -12,6 +12,6 @@ Goals:
 -- Gain exposure to GitHub workflow principles
 
 Development Roadmap:
--- Acheive functionality
--- Review with with designer/other coders to refine UI/UX and clean code
+-- Acheive functionality (Done)
+-- Review with with designer & mentor to refine UI/UX and clean code (Done)
 -- Go public NLT 1/15/22
