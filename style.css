@@ -272,25 +272,21 @@ a:visited {
   text-transform: initial;
   /* initial text transform ignores the global capitalization rules */
 }
-.img-ceremony {
+.map {
   position: absolute;
   top: 16vh;
   left: 1px;
   width: 34%;
   margin-left: 10%;
-  height: 90%;
-  max-height: 60rem;
-  max-width: 45rem;
 }
 
 @media screen and (max-width: 768px) {
   /* ceremony page mobile changes */
 
-  .img-ceremony {
+  .map {
     position: relative;
-    top: 1vh;
-    width: 50%;
-    margin-left: 0%;
+    width: 100%;
+    margin: 0;
   }
 
   .ceremony-text {
