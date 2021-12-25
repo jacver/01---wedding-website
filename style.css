@@ -639,11 +639,12 @@ a:visited {
   }
 
   .img-proposal {
-    width: 65%;
+    width: 85%;
+    height: 80%;
     position: absolute;
-    height: 65%;
     top: 75vh;
     transform: translateX(-50%);
     left: 50%;
+    padding-bottom: 2rem;
   }
 }
