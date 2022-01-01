@@ -1,17 +1,17 @@
 # Wedding-Site
 
 Summary:
-This project is my first introduction to code. I wanted to create the website for my wedding from scratch so I dove into HTML and CSS on my own and have been working through a comprehensive Javascript course on Udemy. Exploring how the three languages work together is a personal project to suplement the Javascript course and reinforce fundamental HTML and CSS.
+This project is my first introduction to coding. Combining knowledge and research from self-taught CSS and HTML and a comprehensive Javascript course I'm working through on Udemy.
 
 Goals:
--- Practice fundamental HTML and CSS
--- Practice problem solving and researching (stack overflow, google, youtube, etc)
--- Utilize javascript for user interaction
--- Project planning reinforcement
+-- Practice fundamental HTML and CSS to build good habits
+-- Practice problem solving framework
+-- Learning how to effectively research problems and solutions
 -- After acheiving functionality, improve overall UI/UX through collaboration with a designer
 -- Gain exposure to GitHub workflow principles
 
 Development Roadmap:
 -- Acheive functionality (Done)
--- Review with with designer & mentor to refine UI/UX and clean code (Done)
--- Go public NLT 1/15/22
+-- Review with with designer and notes implemented (Done)
+-- Go public NLT 1/15/22 (Done)
+-- Rework website to use Javascript frameworks or libraries and less vanilla Javascript
