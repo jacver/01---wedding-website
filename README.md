@@ -13,5 +13,6 @@ Goals:
 Development Roadmap:
 -- Acheive functionality (Done)
 -- Review with with designer and notes implemented (Done)
--- Go public NLT 1/15/22 (Done)
--- Rework website to use Javascript frameworks or libraries and less vanilla Javascript
+-- 1/15/22 - website live & public 
+-- 2/13/22 - refactored CSS media queries
+-- TO-DO - use flexbox and grid more extensively 
