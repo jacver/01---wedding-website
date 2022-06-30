@@ -1,5 +1,7 @@
 # Wedding-Site
 
+Hosted Link: https://jacver.github.io/01-wedding-website/
+
 Summary:
 This project is my first introduction to coding. Combining knowledge and research from self-taught CSS and HTML and a comprehensive Javascript course I'm working through on Udemy.
 
