@@ -7,14 +7,22 @@ This project is my first introduction to coding. Combining knowledge and researc
 
 Goals:
 -- Practice fundamental HTML and CSS to build good habits
+
 -- Practice problem solving framework
+
 -- Learning how to effectively research problems and solutions
+
 -- After acheiving functionality, improve overall UI/UX through collaboration with a designer
+
 -- Gain exposure to GitHub workflow principles
 
 Development Roadmap:
--- Acheive functionality (Done)
+-- Achieve functionality (Done)
+
 -- Review with with designer and notes implemented (Done)
+
 -- 1/15/22 - website live & public 
+
 -- 2/13/22 - refactored CSS media queries
+
 -- TO-DO - use flexbox and grid more extensively 
